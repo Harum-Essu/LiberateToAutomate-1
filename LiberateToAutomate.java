@@ -16,22 +16,7 @@ public class LiberateToAutomate {
   // - static: denotes procedural style code (i.e., not Object Oriented)
   // - void: the return type of the method (in this case NOTHING)
   public static void main(String[] args) {
-    String question = "What is the largest planet in our solar system?";
-    String choiceOne = "earth";
-    String choiceTwo = "jupiter";
-    String choiceThree = "saturn";
-
-    String correctAnswer = choiceTwo;
-    System.out.println(question);
-    System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", " + choiceThree + ".");
-    Scanner Scanner = new Scanner(system.in);
-    string input = scanner.next();
-    if (correctAnswer.equals(input.toLowerCase())) {
-      System.out.println("Congrats! That's the correct answer");
-    } else {
-      System.out.println("You are incorrect. The correct answer is " + correctAnswer);
-    }
-
+    
     // initialize a variable of type OBJECT Scanner and call its CONSTRUCTOR with the System.in parameter)
     Scanner user_input = new Scanner(System.in);
 
