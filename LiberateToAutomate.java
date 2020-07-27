@@ -16,38 +16,42 @@ public class LiberateToAutomate {
   // - static: denotes procedural style code (i.e., not Object Oriented)
   // - void: the return type of the method (in this case NOTHING)
   public static void main(String[] args) {
-    String question = "What is the largest planet in our solar system?";
-    String choiceOne = "earth";
-    String choiceTwo = "jupiter";
-    String choiceThree = "saturn";
-
-    String correctAnswer = choiceTwo;
-    System.out.println(question);
-    System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", " + choiceThree + ".");
-    Scanner Scanner = new Scanner(system.in);
-    string input = scanner.next();
-    if (correctAnswer.equals(input.toLowerCase())) {
-      System.out.println("Congrats! That's the correct answer");
-    } else {
-      System.out.println("You are incorrect. The correct answer is " + correctAnswer);
-    }
-
-    // initialize a variable of type OBJECT Scanner and call its CONSTRUCTOR with the System.in parameter)
+    //Scanner Creation
     Scanner user_input = new Scanner(System.in);
-
-    // a standard Java method for output of a STRING LITERAL
-    // the \n denotes a "carriage return" - or blank line
-    System.out.println("LiberateToAutomate\n\n");
-
-    System.out.println("Enter Something:");
-
-    // initialize a STRING VARIABLE and call the Scanner.nextLine() of user_input
-    String something = user_input.nextLine();
-
-    System.out.println("\n\n\n\n");
-
-    // perform String concatenation using the + operator and output the result to the console
-    System.out.println("You Entered:" + something);
-    System.out.println("I hope that's what you wanted!");
+    //Lable and space
+    System.out.println("Student Log\n\n");
+    //first name
+    System.out.println("Enter Student First Name");
+    String firstName = user_input.nextLine();
+    //last name
+    System.out.println("Enter Student Last Name");
+    String lastName = user_input.nextLine();
+    //Major
+    System.out.println("Enter " + firstName + " " + lastName + "'s Major");
+    String studentMajor = user_input.nextLine();
+    //Minor
+    System.out.println("Enter " + firstName + " " + lastName + "'s Minor");
+    String studentMinor = user_input.nextLine();
+    //student age
+    System.out.println("Enter Student Age");
+    int age = user_input.nextInt();
+    //expectedGraduationYear
+    System.out.println(firstName +  " " + lastName + "'s Expected Graduation Year");
+    int expectedGraduationYear = user_input.nextInt();
+    //GPA
+    System.out.println("Enter GPA of " + lastName + ", " + firstName);
+    double gpa = user_input.nextDouble();
+    //spacing
+    System.out.println("\n\n");
+    //print check
+    System.out.println("First Name: " + firstName);
+    System.out.println("Last Name: " + lastName);
+    System.out.println("Age: " + age);
+    System.out.println("Major: " + studentMajor);
+    System.out.println("Minor: " + studentMinor);
+    System.out.println("Expected Graduation Year " + expectedGraduationYear);
+    System.out.println("GPA: " + gpa);
+    //space and end confirmation
+    System.out.println("\n\nStudent Updated");
   }
 }
